@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  background-color: #e5ecf2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-app {
+  width: 300px;
+  height: 500px;
+  background-color: #f2f7fd;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.music-content {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.music-album {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-cover-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.rotate {
+  animation: rotateFrame 4s linear infinite;
+}
+.song-title {
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+.artist {
+  color: #b2b9c7;
+  text-align: center;
+}
+.music-controls {
+  width: 100%;
+  padding: 50px 40px 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-step-backward,
+.fa-step-forward {
+  font-size: 20px;
+}
+.fa-play-circle,
+.fa-pause-circle {
+  font-size: 50px;
+  border-radius: 50%;
+  color: #f9a96f;
+}
+.fas:hover {
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.hidden {
+  display: none;
+}
+@keyframes rotateFrame {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
